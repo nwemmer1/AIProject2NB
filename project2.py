@@ -194,6 +194,8 @@ def interactivelyTraverse():
     return
 """
 def menuItemThree():
+    popList = featuresList
+    popList.pop()
     while True:
         #learned the cool multiple line stuff
         submenuChoice = input("""
@@ -202,10 +204,9 @@ def menuItemThree():
         What would you like to do? (Please enter 1 or 2):
         """)
 
+
         if submenuChoice == 1:
             print("This is a list of the features:\n")
-            popList = featuresList
-            popList.pop()
             print(list(popList))
 #Has several parts in my code where i had to use raw_input, learned the difference between the two
             #dataForInput = raw_input("Please enter the data for the above fields, separated with commas: ").split(',')
